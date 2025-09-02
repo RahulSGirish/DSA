@@ -41,6 +41,17 @@ class LL {
     }
   }
 
+  boolean search(int key){
+    Node temp = head;
+    while(temp != null){
+      if(temp.data == key){
+       return true;
+      } 
+      temp = temp.next;
+    }
+    return false;
+  }
+
   void display(LL list) {
     Node temp = list.head;
     while (temp != null) {
@@ -61,5 +72,6 @@ class Main {
     list.display(list);
     list.delete(20);
     list.display(list);
+    System.out.println(list.search(30));
   }
 }
