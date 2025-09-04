@@ -1,22 +1,5 @@
 import java.util.ArrayList;
 
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode() {
-    }
-
-    ListNode(int val) {
-        this.val = val;
-    }
-
-    ListNode(int val, ListNode next) {
-        this.val = val;
-        this.next = next;
-    }
-}
-
 public class convertBinaryNumberInLLToInteger {
     public int getDecimalValue(ListNode head) {
         int result = 0;

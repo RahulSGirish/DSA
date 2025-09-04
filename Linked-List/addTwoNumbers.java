@@ -52,7 +52,7 @@ class Solution {
     }
 }
 
-public class Main {
+public class addTwoNumbers {
     public static void main(String[] args) {
         ListNode l1 = new ListNode(2, new ListNode(4, new ListNode(3)));
 
