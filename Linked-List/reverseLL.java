@@ -3,20 +3,16 @@ import java.util.Collections;
 
 public class reverseLL {
     public ListNode reverseList(ListNode head) {
-        ListNode temp = head;
-        ArrayList<Integer> arr = new ArrayList<>();
-        while (temp != null) {
-            arr.add(temp.val);
-            temp = temp.next;
+        ListNode prev = null;
+        ListNode curr = head;
+
+        while (curr != null) {
+            ListNode temp = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = temp;
         }
-        Collections.reverse(arr);
-        ListNode head1 = new ListNode(arr.get(0));
-        ListNode resNode = head1;
-        for (int i = 1; i < arr.size(); i++) {
-            resNode.next = new ListNode(arr.get(i));
-            resNode = resNode.next;
-        }
-        return head1;
+        return prev;
     }
 
     public static void main(String[] args) {
