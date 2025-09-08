@@ -1,3 +1,5 @@
+package src.linkedList;
+
 class Node {
   int data;
   Node next;
@@ -41,12 +43,12 @@ class LL {
     }
   }
 
-  boolean search(int key){
+  boolean search(int key) {
     Node temp = head;
-    while(temp != null){
-      if(temp.data == key){
-       return true;
-      } 
+    while (temp != null) {
+      if (temp.data == key) {
+        return true;
+      }
       temp = temp.next;
     }
     return false;

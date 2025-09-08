@@ -1,3 +1,5 @@
+package src.linkedList;
+
 import java.util.ArrayList;
 
 public class convertBinaryNumberInLLToInteger {
