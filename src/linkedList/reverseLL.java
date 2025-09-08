@@ -1,5 +1,4 @@
-import java.util.ArrayList;
-import java.util.Collections;
+package src.linkedList;
 
 public class reverseLL {
     public ListNode reverseList(ListNode head) {

@@ -1,3 +1,5 @@
+package src.linkedList;
+
 public class AddTwoNumbers {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         int carry = 0;
@@ -15,8 +17,10 @@ public class AddTwoNumbers {
             curr.next = new ListNode(total % 10);
             curr = curr.next;
 
-            if (l1 != null) l1 = l1.next;
-            if (l2 != null) l2 = l2.next;
+            if (l1 != null)
+                l1 = l1.next;
+            if (l2 != null)
+                l2 = l2.next;
         }
 
         return dummy.next;
@@ -35,7 +39,8 @@ public class AddTwoNumbers {
     static void printList(ListNode node) {
         while (node != null) {
             System.out.print(node.val);
-            if (node.next != null) System.out.print(" -> ");
+            if (node.next != null)
+                System.out.print(" -> ");
             node = node.next;
         }
         System.out.println();
